@@ -67,6 +67,12 @@ function informe(){
     alert("Tu saldo actual es de $" + saldoActual);
 }
 
+// Opción 4 - Salir
+
+function salida(){
+    alert("¡Hasta pronto!");
+}
+
 let opcion= menu();
 
 switch(opcion){
@@ -82,8 +88,13 @@ switch(opcion){
          informe();
         break;
 
-        default:
+    case 4:
+        salida();
+        break;
+
+    default:
             alert("Intente nuevamente");
             break;
 
 } 
+
